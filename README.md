@@ -1,4 +1,4 @@
-# Transcription & Japanese Translation Tool
+# Transcription & Translation Tool
 
 A personal tool for transcribing & translating my vlogs into Japanese.
 
