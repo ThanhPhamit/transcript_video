@@ -73,7 +73,7 @@ export default function Home() {
         <title>YouTube Transcription &amp; Japanese Translation</title>
       </Head>
       <Container size={{ '@initial': '1', '@bp1': '2' }}>
-        <Text as="h1">Vlog Transcription &amp; Japanese Translation Tool</Text>
+        <Text as="h1">Transcription &amp; Translation Tool</Text>
         <VideoForm
           onSubmit={handleStartProcessing}
           isProcessing={isProcessing}

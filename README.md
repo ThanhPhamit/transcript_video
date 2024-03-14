@@ -17,7 +17,7 @@ A personal tool for transcribing & translating my vlogs into Japanese.
 ## How to use
 
 1. Get your OpenAI API Key [here](https://platform.openai.com/account/api-keys)
-2. Set an environment variable `$OPENAI_API_KEY`
+2. Set an environment variable `OPENAI_API_KEY`
 3. Run the following commands
 
 ```bash

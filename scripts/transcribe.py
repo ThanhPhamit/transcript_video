@@ -7,7 +7,7 @@ language = sys.argv[2]
 audio_file_path = os.path.join(os.getcwd(), 'tmp', video_id + '.m4a')
 
 output_directory = os.path.join(os.getcwd(), 'output')
-output_file_path = os.path.join(output_directory, video_id + '_' + language + '.txt')
+output_file_path = os.path.join(output_directory, video_id + '_' + language + '.srt')
 
 audio_file = open(audio_file_path, 'rb')
 transcript = openai.audio.transcriptions.create(

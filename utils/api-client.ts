@@ -14,6 +14,24 @@ export async function processVideo(
   callback('\nTranscribing audio English subtitle. It takes a while...\n')
   const srt_en = await transcribe(videoId, "en", callback)
 
+  callback('\nTranslatting to Japanese. It takes a while...\n')
+  const srt_ja = await transcribe(videoId, "ja", callback)
+
+  callback('\nTranslatting to French. It takes a while...\n')
+  const srt_fe = await transcribe(videoId, "fr", callback)
+
+  callback('\nTranslatting to Russian. It takes a while...\n')
+  const srt_ru = await transcribe(videoId, "ru", callback)
+
+  callback('\nTranslatting to German. It takes a while...\n')
+  const srt_de = await transcribe(videoId, "de", callback)
+
+  callback('\nTranslatting to Korean. It takes a while...\n')
+  const srt_ko = await transcribe(videoId, "ko", callback)
+
+  callback('\nTranslatting to Spanish. It takes a while...\n')
+  const srt_es = await transcribe(videoId, "es", callback)
+
   if (srt_en) {
     callback('\nTranslating text...\n')
     const result = await translate(srt_en, callback)
